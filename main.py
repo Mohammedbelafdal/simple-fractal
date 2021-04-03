@@ -28,7 +28,7 @@ output=Image.new("RGB",(1366,766))
 def mandelset(x,y,iteration):
     value=complex(x,y)
     for x in range (0,iteration):
-        value=value*value+constant
+        value=value*value+constant #expression
     try:
         if abs(value)>threshold1:
             return 2
