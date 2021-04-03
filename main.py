@@ -6,9 +6,9 @@ black=(0,0,0)
 blue=(0,0,255)
 green=(0,255,0)
 red=(255,0,0)
-###creation de l image
+###image creation
 output=Image.new("RGB",(1366,766))
-###fonction mandelbrot
+###fractal function
 def mandelset(x,y,iteration):
     value=complex(x,y)
     for x in range (0,iteration):
@@ -21,7 +21,7 @@ def mandelset(x,y,iteration):
     except Exception:
         return 0
     return False
-###iteration pixel par pixel
+###pixel by pixel iteration
 for y in range (0,output.size[1]):
         for x in range (0,output.size[0]):
             xaxis=float(x-output.size[0]/2)
@@ -37,6 +37,6 @@ for y in range (0,output.size[1]):
                 output.putpixel(coords,white)
             if((xaxis==0 or yaxis==0)):
                 output.putpixel(coords,blue)
-###affichage et enregistrement
+###display and save
 output.show()
 output.save(str(str(time.gmtime())+".png"))
