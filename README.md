@@ -1,4 +1,4 @@
-# simple-fractale
+# simple-fractal
 simple fractal with python and PIL library
 
 Usage:
