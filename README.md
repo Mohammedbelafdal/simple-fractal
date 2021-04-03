@@ -1,5 +1,5 @@
 # simple-fractal
-simple fractal with python and PIL library
+simple fractal with python and PIL library, perfect for teaching or learning
 
 Usage:
 
